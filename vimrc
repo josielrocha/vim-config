@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
-let g:vim_directory = fnamemodify(expand($MYVIMRC, ":p:h"))
-let g:config_directory = g:vim_directory, 'conf'
+let g:vim_directory = fnamemodify(expand($MYVIMRC), ":p:h")
+let g:config_directory = g:vim_directory . '/conf'
 let g:config_files = [g:config_directory . '/user-settings.vim']
 
 let g:plugins = [
