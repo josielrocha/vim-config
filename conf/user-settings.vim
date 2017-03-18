@@ -52,14 +52,21 @@ augroup END
 
 " Clipboard
 augroup clipboard
-	set clipboard=unnamedplus
+	if has('clipboard')
+		set clipboard=unnamed
+		if has('unnamedplus')
+			set clipboard+=unnamedplus
+		endif
+	endif
 augroup END
 
 " Diff
-if &diff
-	colorscheme Monokai
-	let &diffexpr='EnhancedDiff#Diff("git diff", "--diff-algorithm=patience")'
-endif
+augroup diff
+	if &diff
+		colorscheme Monokai
+		let &diffexpr='EnhancedDiff#Diff("git diff", "--diff-algorithm=patience")'
+	endif
+augroup END
 
 augroup directory
 	" No change current directory to current file automatically
