@@ -1,7 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
-" Plugins
-let plugins = [
+let g:vim_directory = fnamemodify(expand($MYVIMRC, ":p:h"))
+let g:config_directory = g:vim_directory, 'conf'
+let g:config_files = [g:config_directory . '/user-settings.vim']
+
+let g:plugins = [
   \'NLKNguyen/papercolor-theme',
   \'airblade/vim-gitgutter',
   \'tweekmonster/startuptime.vim',
@@ -30,27 +33,22 @@ let plugins = [
   \'xuyuanp/nerdtree-git-plugin',
 \]
 
-
-for plugin in plugins
+" Plugins
+for plugin in g:plugins
 	Plug plugin
+
+	let g:filename = join([tolower(substitute(g:plugin, "/", "-", "")), ".vim"], "")
+	let g:filepath = join([g:config_directory, g:filename], "/")
+
+	call add(g:config_files, expand(g:filepath))
 endfor
 
 call plug#end()
 
-" Config files
-let config_files = [
-  \'airblade-vim-gitgutter.vim',
-  \'chiedo-vim-px-to-em.vim',
-  \'jistr-vim-nerdtree-tabs.vim',
-  \'nlknguyen-papercolor-theme.vim',
-  \'scrooloose-nerdtree.vim',
-  \'user-settings.vim',
-  \'vim-airline-vim-airline-themes.vim',
-  \'vim-airline-vim-airline.vim',
-  \'xuyuanp-nerdtree-git-plugin.vim',
-\]
-
-for config_file in config_files
-	execute 'source ' . join([expand("%:p:h"), "conf", config_file], "/")
+" Settings
+for config_file in g:config_files
+	if filereadable(config_file)
+		execute 'source ' . config_file
+	endif
 endfor
 

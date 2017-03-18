@@ -55,6 +55,8 @@ augroup clipboard
 	set clipboard=unnamedplus
 augroup END
 
+echom 'AAAA'
+
 " Diff
 if &diff
 	colorscheme Monokai
