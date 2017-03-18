@@ -66,7 +66,7 @@ augroup directory
 	set noautochdir
 
 	" Swap files in separated directory
-	set directory=$HOME/.vim/swapfiles//
+	execute 'set directory=' . fnamemodify(expand($MYVIMRC), ':p:h') . '/.swapfiles//'
 augroup END
 
 " Disable arrow keys
