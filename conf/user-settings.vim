@@ -29,7 +29,8 @@ highlight ColorColumn ctermbg=8
 nnoremap <C-t>     :tabnew<CR>
 
 " Indentação
-set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
+"set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
+set softtabstop=0 smarttab
 set listchars=tab:>\ ,trail:·,extends:\#,nbsp:.
 set list!
 
