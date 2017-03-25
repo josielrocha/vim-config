@@ -15,6 +15,7 @@ let g:plugins = [
   \'jiangmiao/auto-pairs',
   \'jistr/vim-nerdtree-tabs',
   \'ctrlpvim/ctrlp.vim',
+  \'csscomb/vim-csscomb',
   \'lepture/vim-velocity',
   \'maksimr/vim-jsbeautify',
   \'mileszs/ack.vim',

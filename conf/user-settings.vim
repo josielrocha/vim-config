@@ -15,7 +15,7 @@ autocmd FileType css,less,scss,sass set omnifunc=csscomplete#CompleteCSS
 nnoremap <c-f> :call JsBeautify()<cr>
 autocmd FileType javascript nnoremap <buffer>  <c-f> :call JsBeautify()<cr>
 autocmd FileType html nnoremap <buffer> <c-f> :call HtmlBeautify()<cr>
-autocmd FileType css nnoremap <buffer> <c-f> :call CSSBeautify()<cr>
+" autocmd FileType css nnoremap <buffer> <c-f> :call CSSBeautify()<cr>
 
 " Showing line numbers and length
 set number " show line numbers
