@@ -9,6 +9,7 @@ let g:plugins = [
   \'airblade/vim-gitgutter',
   \'tweekmonster/startuptime.vim',
   \'editorconfig/editorconfig-vim',
+  \'evanmiller/nginx-vim-syntax',
   \'gregsexton/matchtag',
   \'mustache/vim-mustache-handlebars',
   \'heavenshell/vim-jsdoc',
