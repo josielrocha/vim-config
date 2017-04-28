@@ -14,6 +14,8 @@ let g:plugins = [
 	\'mustache/vim-mustache-handlebars',
 	\'heavenshell/vim-jsdoc',
 	\'jiangmiao/auto-pairs',
+  \'chiedo/vim-px-to-em',
+  \'thaerkh/vim-workspace',
 	\'jistr/vim-nerdtree-tabs',
 	\'ctrlpvim/ctrlp.vim',
 	\'csscomb/vim-csscomb',
