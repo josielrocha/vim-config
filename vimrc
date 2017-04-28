@@ -14,9 +14,11 @@ let g:plugins = [
 	\'mustache/vim-mustache-handlebars',
 	\'heavenshell/vim-jsdoc',
 	\'jiangmiao/auto-pairs',
-  \'chiedo/vim-px-to-em',
-  \'thaerkh/vim-workspace',
+	\'ekalinin/dockerfile.vim',
+	\'mhinz/vim-startify',
+	\'ntpeters/vim-better-whitespace',
 	\'jistr/vim-nerdtree-tabs',
+	\'junegunn/gv.vim',
 	\'ctrlpvim/ctrlp.vim',
 	\'csscomb/vim-csscomb',
 	\'lepture/vim-velocity',
@@ -34,17 +36,21 @@ let g:plugins = [
 	\'vim-airline/vim-airline-themes',
 	\'w0rp/ale',
 	\'chiedo/vim-px-to-em',
+	\'thaerkh/vim-workspace',
+	\'thaerkh/vim-indentguides',
+	\'chiedo/vim-px-to-em',
 	\'mhinz/vim-grepper',
 	\'xuyuanp/nerdtree-git-plugin',
 \]
 
+
+"\'chiel92/vim-autoformat',
+
 " Plugins
 for plugin in g:plugins
 	Plug plugin
-
 	let g:filename = join([tolower(substitute(g:plugin, "/", "-", "")), ".vim"], "")
 	let g:filepath = join([g:config_directory, g:filename], "/")
-
 	call add(g:config_files, expand(g:filepath))
 endfor
 
