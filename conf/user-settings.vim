@@ -1,52 +1,55 @@
-set nocompatible              " be iMproved, required
-set encoding=utf-8
-filetype off                  " required
-syntax on
+augroup base
+	set nocompatible              " be iMproved, required
+	set encoding=utf-8
+	filetype off                  " required
+	syntax on
+augroup END
 
 " Filetypes
-au BufNewFile,BufRead *.json,*.htmlhintrc,*.eslintrc set ft=json
+augroup filetypes
+	au BufNewFile,BufRead *.json,*.htmlhintrc,*.eslintrc set ft=json
+augroup END
 
 " Autocomplete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html,xhtml set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css,less,scss,sass set omnifunc=csscomplete#CompleteCSS
+augroup autocomplete
+	autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+	autocmd FileType html,xhtml set omnifunc=htmlcomplete#CompleteTags
+	autocmd FileType css,less,scss,sass set omnifunc=csscomplete#CompleteCSS
+augroup END
 
 " Source Format
-nnoremap <c-f> :call JsBeautify()<cr>
-autocmd FileType javascript nnoremap <buffer>  <c-f> :call JsBeautify()<cr>
-autocmd FileType html nnoremap <buffer> <c-f> :call HtmlBeautify()<cr>
-" autocmd FileType css nnoremap <buffer> <c-f> :call CSSBeautify()<cr>
+augroup format
+	autocmd FileType javascript,json nnoremap <buffer>  <c-f> :call JsBeautify()<cr>
+	autocmd FileType html nnoremap <buffer> <c-f> :call HtmlBeautify()<cr>
+	autocmd FileType css nnoremap <buffer> <c-f> :call CSSBeautify()<cr>
+augroup END
 
-" Showing line numbers and length
-set number " show line numbers
-set tw=79  " width of document (used by gd)
-set nowrap " do not automatically wrap on load
-set fo-=t  " do not automatically wrap text when typing
-let &colorcolumn=join(range(81, 81), ",")
-highlight ColorColumn ctermbg=8
+augroup navigation
+	nnoremap <C-t>     :tabnew<CR>
+augroup END
 
-" Tab navigation like Firefox.
-nnoremap <C-t>     :tabnew<CR>
-
-" Indentação
-"set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
-set softtabstop=0 smarttab
-set listchars=tab:>\ ,trail:·,extends:\#,nbsp:.
-set list!
+augroup visual-help
+	set number " show line numbers
+	set tw=79  " width of document (used by gd)
+	set nowrap " do not automatically wrap on load
+	set fo-=t  " do not automatically wrap text when typing
+	let &colorcolumn=join(range(81, 81), ",")
+	highlight ColorColumn ctermbg=8
+	set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
+	set softtabstop=0 smarttab
+	set cursorline
+	set listchars=tab:>\ ,trail:·,extends:\#,nbsp:.
+	set list
+augroup END
 
 " Useful settings
-set history=500
-set undolevels=200
-
-" Destacando a linha onde o cursor está
-set cursorline
-
-augroup Ack
-	nnoremap <Leader>f :Ack!<Space>
+augroup history
+	set history=500
+	set undolevels=200
 augroup END
 
 " Fold
-augroup vimrc
+augroup fold
 	set nofoldenable
 	set foldmethod=indent
 augroup END
