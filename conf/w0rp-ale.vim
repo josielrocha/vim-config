@@ -1,5 +1,11 @@
 let g:ale_javascript_eslint_use_global = 0
-let g:ale_linters = {'javascript': ['stylelint', 'eslint']}
+let g:ale_linters = {
+	\ 'javascript': ['eslint'],
+	\ 'scss': ['stylelint']
+	\}
+
+"let g:ale_scss_stylelint_executable = 'node_modules/.bin/stylelint'
+"let g:ale_scss_stylelint_executable = 'node_modules/.bin/style-lint'
 let g:ale_javascript_eslint_executable = 'node_modules/.bin/eslint'
 let g:ale_sign_column_always = 0
 let g:ale_lint_on_text_changed = 1

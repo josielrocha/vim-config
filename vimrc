@@ -9,7 +9,7 @@ let g:plugins = [
 	\'airblade/vim-gitgutter',
 	\'chiedo/vim-px-to-em',
 	\'chiedo/vim-px-to-em',
-	\'ctrlpvim/ctrlp.vim',
+  \'Yggdroot/LeaderF',
 	\'editorconfig/editorconfig-vim',
 	\'ekalinin/dockerfile.vim',
 	\'evanmiller/nginx-vim-syntax',
@@ -40,6 +40,7 @@ let g:plugins = [
 	\'xuyuanp/nerdtree-git-plugin',
 \]
 
+"\'ctrlpvim/ctrlp.vim',
 "\'chiel92/vim-autoformat',
 "\'csscomb/vim-csscomb',
 "\'mhinz/vim-startify',
