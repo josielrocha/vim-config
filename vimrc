@@ -9,7 +9,7 @@ let g:plugins = [
 	\'airblade/vim-gitgutter',
 	\'chiedo/vim-px-to-em',
 	\'chiedo/vim-px-to-em',
-  \'Yggdroot/LeaderF',
+	\'Yggdroot/LeaderF',
 	\'editorconfig/editorconfig-vim',
 	\'ekalinin/dockerfile.vim',
 	\'evanmiller/nginx-vim-syntax',
@@ -30,7 +30,6 @@ let g:plugins = [
 	\'scrooloose/nerdtree',
 	\'terryma/vim-multiple-cursors',
 	\'thaerkh/vim-indentguides',
-	\'thaerkh/vim-workspace',
 	\'tpope/vim-fugitive',
 	\'tpope/vim-sensible',
 	\'tweekmonster/startuptime.vim',
@@ -41,6 +40,7 @@ let g:plugins = [
 \]
 
 "\'ctrlpvim/ctrlp.vim',
+"\'thaerkh/vim-workspace',
 "\'chiel92/vim-autoformat',
 "\'csscomb/vim-csscomb',
 "\'mhinz/vim-startify',
