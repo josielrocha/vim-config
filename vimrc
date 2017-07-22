@@ -8,7 +8,6 @@ let g:plugins = [
 	\'NLKNguyen/papercolor-theme',
 	\'airblade/vim-gitgutter',
 	\'chiedo/vim-px-to-em',
-	\'chiedo/vim-px-to-em',
 	\'Yggdroot/LeaderF',
 	\'editorconfig/editorconfig-vim',
 	\'ekalinin/dockerfile.vim',
