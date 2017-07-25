@@ -6,14 +6,15 @@ call plug#begin(g:vim_directory . '/plugged')
 
 let g:plugins = [
 	\'NLKNguyen/papercolor-theme',
-	\'Yggdroot/LeaderF',
 	\'airblade/vim-gitgutter',
-	\'chiedo/vim-px-to-em',
-	\'chiedo/vim-px-to-em',
+	\'Yggdroot/LeaderF',
 	\'editorconfig/editorconfig-vim',
 	\'ekalinin/dockerfile.vim',
 	\'evanmiller/nginx-vim-syntax',
 	\'gregsexton/matchtag',
+	\'kien/tabman.vim',
+	\'ervandew/screen',
+	\'chiedo/vim-px-to-em',
 	\'heavenshell/vim-jsdoc',
 	\'isRuslan/vim-es6',
 	\'jiangmiao/auto-pairs',
@@ -39,12 +40,12 @@ let g:plugins = [
 	\'xuyuanp/nerdtree-git-plugin',
 \]
 
+"\'ctrlpvim/ctrlp.vim',
+"\'thaerkh/vim-workspace',
 "\'chiel92/vim-autoformat',
 "\'csscomb/vim-csscomb',
-"\'ctrlpvim/ctrlp.vim',
 "\'mhinz/vim-startify',
 "\'mileszs/ack.vim',
-"\'thaerkh/vim-workspace',
 
 " Plugins
 for plugin in g:plugins
