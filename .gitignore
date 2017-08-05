@@ -1,3 +1,4 @@
 /plugged
+*.orig
 *.swp
 .vimsession*

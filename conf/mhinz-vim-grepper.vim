@@ -6,6 +6,6 @@ augroup mhinz-vim-grepper
 	let g:grepper.next_tool = '<leader>g'
 
 	nnoremap <leader>g :Grepper -query
-	nnoremap <leader>gg :Grepper -tool git<cr>
-	nnoremap <leader>ga :Grepper -tool ack<cr>
+	nnoremap <leader>gg :Grepper -tool git -query<cr>
+	nnoremap <leader>ga :Grepper -tool ack -query<cr>
 augroup END
