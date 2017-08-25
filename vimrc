@@ -6,6 +6,7 @@ call plug#begin(g:vim_directory . '/plugged')
 
 let g:plugins = [
 	\'NLKNguyen/papercolor-theme',
+	\'szw/vim-maximizer',
 	\'airblade/vim-gitgutter',
 	\'Yggdroot/LeaderF',
 	\'editorconfig/editorconfig-vim',

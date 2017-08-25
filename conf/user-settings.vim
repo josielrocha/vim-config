@@ -5,6 +5,12 @@ augroup base
 	syntax on
 augroup END
 
+" Swap
+augroup swap
+	set noswapfile
+	set nobackup
+augroup END
+
 " Filetypes
 augroup filetypes
 	au BufNewFile,BufRead *.json,*.htmlhintrc,*.eslintrc set ft=json
