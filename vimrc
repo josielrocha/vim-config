@@ -13,6 +13,7 @@ let g:plugins = [
 	\'ekalinin/dockerfile.vim',
 	\'evanmiller/nginx-vim-syntax',
 	\'gregsexton/matchtag',
+	\'airblade/vim-rooter',
 	\'kien/tabman.vim',
 	\'ervandew/screen',
 	\'chiedo/vim-px-to-em',
