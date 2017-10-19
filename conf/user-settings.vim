@@ -11,6 +11,10 @@ augroup swap
 	set nobackup
 augroup END
 
+augroup remap
+	let mapleader = ","
+augroup END
+
 " Filetypes
 augroup filetypes
 	au BufNewFile,BufRead *.json,*.htmlhintrc,*.eslintrc set ft=json

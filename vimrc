@@ -11,7 +11,6 @@ let g:plugins = [
 	\'Yggdroot/LeaderF',
 	\'editorconfig/editorconfig-vim',
 	\'ekalinin/dockerfile.vim',
-	\'evanmiller/nginx-vim-syntax',
 	\'gregsexton/matchtag',
 	\'airblade/vim-rooter',
 	\'kien/tabman.vim',
@@ -40,14 +39,8 @@ let g:plugins = [
 	\'vim-airline/vim-airline-themes',
 	\'w0rp/ale',
 	\'xuyuanp/nerdtree-git-plugin',
+	\'kewah/vim-stylefmt'
 \]
-
-"\'ctrlpvim/ctrlp.vim',
-"\'thaerkh/vim-workspace',
-"\'chiel92/vim-autoformat',
-"\'csscomb/vim-csscomb',
-"\'mhinz/vim-startify',
-"\'mileszs/ack.vim',
 
 " Plugins
 for plugin in g:plugins
