@@ -1,4 +1,4 @@
-augroup vim_session
+augroup thaerkh-vim-workspace
 	nnoremap <leader>s :ToggleWorkspace<CR>
 
 	let g:workspace_autocreate = 1

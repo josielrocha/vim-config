@@ -1,7 +1,34 @@
 augroup yggdroot-leaderf
 	let g:Lf_WildIgnore = {
-		\'dir': ['.svn', '.git', '.hg', 'node_modules', 'target', 'build'],
-		\'file': ['*.sw?', '~$*', '*.bak', '*.exe', '*.o', '*.so', '*.jar', '*.war', '*.class', '*.py[co]']
-	\}
+				\	'dir':
+				\	[
+				\		'.git',
+				\		'.hg',
+				\		'.svn',
+				\		'build',
+				\		'css',
+				\		'dist',
+				\		'js',
+				\		'node_modules',
+				\		'sass',
+				\		'target',
+				\		'templates',
+				\	],
+				\	'file':
+				\	[
+				\		'*.bak',
+				\		'*.class',
+				\		'*.exe',
+				\		'*.gz',
+				\		'*.jar',
+				\		'*.o',
+				\		'*.py[co]',
+				\		'*.so',
+				\		'*.sw?',
+				\		'*.tar',
+				\		'*.war',
+				\		'~$*',
+				\	],
+				\}
 augroup END
 

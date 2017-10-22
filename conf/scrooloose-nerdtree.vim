@@ -1,8 +1,14 @@
-" Variables
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-let g:NERDTreeIgnore = ['\~$', '\.pyc$', '__pycache__', '\.jar$']
+augroup scrooloose-nerdtree
+	" Variables
+	let g:NERDTreeDirArrowExpandable = '▸'
+	let g:NERDTreeDirArrowCollapsible = '▾'
+	let g:NERDTreeIgnore = [
+				\	'\~$',
+				\	'\.pyc$',
+				\	'__pycache__',
+				\	'\.jar$'
+				\]
 
-" Mappings
-map <Leader>nf :NERDTreeFind<CR>
-
+	" Mappings
+	map <Leader>nf :NERDTreeFind<CR>
+augroup END
