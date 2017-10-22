@@ -17,7 +17,7 @@ augroup END
 
 " Filetypes
 augroup filetypes
-	au BufNewFile,BufRead *.json,*.htmlhintrc,*.eslintrc set ft=json
+	au BufNewFile,BufRead *.json,.babelrc,.htmlhintrc,.eslintrc set ft=json
 augroup END
 
 " Autocomplete
