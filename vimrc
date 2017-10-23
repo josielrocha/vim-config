@@ -12,7 +12,6 @@ let g:plugins = [
 			\	'chiedo/vim-px-to-em',
 			\	'editorconfig/editorconfig-vim',
 			\	'ekalinin/dockerfile.vim',
-			\	'ervandew/screen',
 			\	'gregsexton/matchtag',
 			\	'heavenshell/vim-jsdoc',
 			\	'isRuslan/vim-es6',
@@ -29,9 +28,9 @@ let g:plugins = [
 			\	'mustache/vim-mustache-handlebars',
 			\	'ntpeters/vim-better-whitespace',
 			\	'prabirshrestha/async.vim',
-			\	'prabirshrestha/asyncomplete.vim',
-			\	'prabirshrestha/asyncomplete-lsp.vim',
 			\	'prabirshrestha/asyncomplete-flow.vim',
+			\	'prabirshrestha/asyncomplete-lsp.vim',
+			\	'prabirshrestha/asyncomplete.vim',
 			\	'prabirshrestha/vim-lsp',
 			\	'scrooloose/nerdcommenter',
 			\	'scrooloose/nerdtree',
@@ -45,6 +44,8 @@ let g:plugins = [
 			\	'w0rp/ale',
 			\	'xuyuanp/nerdtree-git-plugin',
 			\]
+
+			"\	'ervandew/screen',
 
 " Plugins
 for plugin in g:plugins
@@ -60,7 +61,7 @@ call plug#end()
 for config_file in g:config_files
 	if filereadable(config_file)
 		execute 'source ' . config_file
-		echom config_file . ' loaded'
+		"echom config_file . ' loaded'
 	endif
 endfor
 
