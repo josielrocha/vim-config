@@ -8,6 +8,8 @@ let g:plugins = [
 			\	'NLKNguyen/papercolor-theme',
 			\	'Yggdroot/LeaderF',
 			\	'airblade/vim-gitgutter',
+			\	'tomasiser/vim-code-dark',
+			\	'joshdick/onedark.vim',
 			\	'airblade/vim-rooter',
 			\	'chiedo/vim-px-to-em',
 			\	'editorconfig/editorconfig-vim',

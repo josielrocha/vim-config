@@ -6,8 +6,15 @@ augroup base
 augroup END
 
 augroup user-colorscheme
-	let g:airline_theme='papercolor'
-	colorscheme PaperColor
+	"let g:airline_theme='papercolor'
+	"colorscheme PaperColor
+
+	"let g:airline_theme='onedark'
+	"colorscheme onedark
+
+	let g:airline_theme='codedark'
+	colorscheme codedark
+
 	set background=dark
 augroup END
 
