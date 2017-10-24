@@ -5,6 +5,12 @@ augroup base
 	syntax on
 augroup END
 
+augroup user-colorscheme
+	let g:airline_theme='papercolor'
+	colorscheme PaperColor
+	set background=dark
+augroup END
+
 " Swap
 augroup swap
 	set noswapfile

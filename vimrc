@@ -45,8 +45,6 @@ let g:plugins = [
 			\	'xuyuanp/nerdtree-git-plugin',
 			\]
 
-			"\	'ervandew/screen',
-
 " Plugins
 for plugin in g:plugins
 	Plug plugin
