@@ -6,8 +6,11 @@ let g:config_files = [g:user_settings]
 call plug#begin(g:vim_directory . '/plugged')
 let g:plugins = [
 			\	'NLKNguyen/papercolor-theme',
+			\	'sheerun/vim-polyglot',
 			\	'Yggdroot/LeaderF',
 			\	'airblade/vim-gitgutter',
+			\	'tomasiser/vim-code-dark',
+			\	'joshdick/onedark.vim',
 			\	'airblade/vim-rooter',
 			\	'chiedo/vim-px-to-em',
 			\	'editorconfig/editorconfig-vim',
@@ -44,8 +47,6 @@ let g:plugins = [
 			\	'w0rp/ale',
 			\	'xuyuanp/nerdtree-git-plugin',
 			\]
-
-			"\	'ervandew/screen',
 
 " Plugins
 for plugin in g:plugins
