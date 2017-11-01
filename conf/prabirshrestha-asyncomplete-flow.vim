@@ -14,21 +14,15 @@ augroup prabirshrestha/asyncomplete-flow
 					\ 'name': 'flow',
 					\ 'whitelist': ['javascript'],
 					\ 'completor': function('asyncomplete#sources#flow#completor'),
-					\ 'config': {
-					\    'prefer_local': 1,
-					\    'flowbin_path': expand('~/bin/flow'),
-					\  },
 					\ }))
 
 		let g:lsp_async_completion = 1
-
 		autocmd FileType javascript setlocal omnifunc=asyncomplete#complete
-
-		" let g:lsp_log_verbose = 1
-		" let g:lsp_log_file = expand('~/.vim-lsp.log')
-
-		" for asyncomplete.vim log
-		" let g:asyncomplete_log_file = expand('~/.vim-asyncomplete.log')
 	endif
 augroup END
+
+"\ 'config': {
+"\    'prefer_local': 1,
+"\    'flowbin_path': expand('~/bin/flow'),
+"\  },
 
