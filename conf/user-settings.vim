@@ -31,14 +31,15 @@ augroup END
 " Filetypes
 augroup filetypes
 	au BufNewFile,BufRead *.json,.babelrc,.htmlhintrc,.eslintrc set ft=json
+	au BufNewFile,BufRead *.js set filetype=javascript
 augroup END
 
 " Autocomplete
-augroup autocomplete
-	autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-	autocmd FileType html,xhtml set omnifunc=htmlcomplete#CompleteTags
-	autocmd FileType css,less,scss,sass set omnifunc=csscomplete#CompleteCSS
-augroup END
+"augroup autocomplete
+"    autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+"    autocmd FileType html,xhtml set omnifunc=htmlcomplete#CompleteTags
+"    autocmd FileType css,less,scss,sass set omnifunc=csscomplete#CompleteCSS
+"augroup END
 
 " Source Format
 augroup format
