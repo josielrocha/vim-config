@@ -116,3 +116,21 @@ augroup disable
 	inoremap <right> <nop>
 augroup END
 
+augroup ternjs
+	inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+	inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+	inoremap <expr> <cr> pumvisible() ? "\<C-y>\<cr>" : "\<cr>"
+
+	let g:completor_auto_trigger = 1
+	"inoremap <expr> <Tab> pumvisible() ? "<C-N>" : "<C-R>=completor#do('complete')<CR>"
+
+	let g:completor_set_options = 0
+
+	set completeopt-=longest
+	set completeopt+=menuone
+	set completeopt-=menu
+	if &completeopt !~# 'noinsert\|noselect'
+	  set completeopt+=noselect
+	endif
+augroup END
+
