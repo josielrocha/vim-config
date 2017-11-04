@@ -30,11 +30,7 @@ let g:plugins = [
 			\	'mhinz/vim-grepper',
 			\	'mustache/vim-mustache-handlebars',
 			\	'ntpeters/vim-better-whitespace',
-			\	'prabirshrestha/async.vim',
-			\	'prabirshrestha/asyncomplete-flow.vim',
-			\	'prabirshrestha/asyncomplete-lsp.vim',
-			\	'prabirshrestha/asyncomplete.vim',
-			\	'prabirshrestha/vim-lsp',
+			\	'maralla/completor.vim',
 			\	'scrooloose/nerdcommenter',
 			\	'scrooloose/nerdtree',
 			\	'terryma/vim-multiple-cursors',
@@ -57,6 +53,12 @@ for plugin in g:plugins
 endfor
 
 call plug#end()
+
+"\	'prabirshrestha/async.vim',
+"\	'prabirshrestha/asyncomplete-flow.vim',
+"\	'prabirshrestha/asyncomplete-lsp.vim',
+"\	'prabirshrestha/asyncomplete.vim',
+"\	'prabirshrestha/vim-lsp',
 
 " Settings
 for config_file in g:config_files
