@@ -7,6 +7,7 @@ call plug#begin(g:vim_directory . '/plugged')
 let g:plugins = [
 			\	'NLKNguyen/papercolor-theme',
 			\	'sheerun/vim-polyglot',
+			\	'artur-shaik/vim-javacomplete2',
 			\	'Yggdroot/LeaderF',
 			\	'airblade/vim-gitgutter',
 			\	'tomasiser/vim-code-dark',
