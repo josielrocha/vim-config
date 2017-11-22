@@ -27,6 +27,8 @@ let g:plugins = [
 			\	'lepture/vim-velocity',
 			\	'maksimr/vim-jsbeautify',
 			\	'mattn/emmet-vim',
+			\	'galooshi/vim-import-js',
+			\	'hotoo/jsgf.vim',
 			\	'mbra/vim-javascript-format',
 			\	'mhinz/vim-grepper',
 			\	'mustache/vim-mustache-handlebars',
