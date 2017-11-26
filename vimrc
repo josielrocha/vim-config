@@ -13,7 +13,6 @@ let g:plugins = [
 			\	'tomasiser/vim-code-dark',
 			\	'joshdick/onedark.vim',
 			\	'airblade/vim-rooter',
-			\	'chiedo/vim-px-to-em',
 			\	'editorconfig/editorconfig-vim',
 			\	'ekalinin/dockerfile.vim',
 			\	'gregsexton/matchtag',
