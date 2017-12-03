@@ -1,14 +1,14 @@
-let g:vim_directory = fnamemodify(expand($MYVIMRC), ':p:h')
-let g:config_directory = g:vim_directory . '/conf'
-let g:user_settings = g:config_directory . '/user-settings.vim'
-let g:config_files = [g:user_settings]
+let b:vim_directory = fnamemodify(expand($MYVIMRC), ':p:h')
+let b:config_directory = b:vim_directory . '/conf'
+let b:user_settings = b:config_directory . '/user-settings.vim'
+let b:config_files = [b:user_settings]
 
-call plug#begin(g:vim_directory . '/plugged')
-let g:plugins = [
+call plug#begin(b:vim_directory . '/plugged')
+let b:plugins = [
 			\	'NLKNguyen/papercolor-theme',
 			\	'sheerun/vim-polyglot',
 			\	'artur-shaik/vim-javacomplete2',
-			\	'Yggdroot/LeaderF',
+			\	[ 'Yggdroot/LeaderF', { 'do': './install.sh' } ],
 			\	'airblade/vim-gitgutter',
 			\	'tomasiser/vim-code-dark',
 			\	'joshdick/onedark.vim',
@@ -47,26 +47,28 @@ let g:plugins = [
 			\]
 
 " Plugins
-for plugin in g:plugins
-	Plug plugin
-	let g:filename = join([tolower(substitute(g:plugin, '/', '-', '')), '.vim'], '')
-	let g:filepath = join([g:config_directory, g:filename], '/')
-	call add(g:config_files, expand(g:filepath))
+for plugin in b:plugins
+	if (type(plugin) == 3)
+		let plugin_name = get(plugin, 0)
+		let plugin_options = get(plugin, 1)
+	else
+		let plugin_name = plugin
+		let plugin_options = {}
+	endif
+
+	Plug plugin_name, plugin_options
+
+	let b:filename = join([tolower(substitute(plugin_name, '/', '-', '')), '.vim'], '')
+	let b:filepath = join([b:config_directory, b:filename], '/')
+	call add(b:config_files, expand(b:filepath))
 endfor
 
 call plug#end()
 
-"\	'prabirshrestha/async.vim',
-"\	'prabirshrestha/asyncomplete-flow.vim',
-"\	'prabirshrestha/asyncomplete-lsp.vim',
-"\	'prabirshrestha/asyncomplete.vim',
-"\	'prabirshrestha/vim-lsp',
-
 " Settings
-for config_file in g:config_files
+for config_file in b:config_files
 	if filereadable(config_file)
 		execute 'source ' . config_file
-		"echom config_file . ' loaded'
 	endif
 endfor
 
