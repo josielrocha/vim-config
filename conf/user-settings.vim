@@ -31,6 +31,7 @@ augroup END
 " Filetypes
 augroup filetypes
 	au BufNewFile,BufRead *.json,.babelrc,.htmlhintrc,.eslintrc set ft=json
+	au BufNewFile,BufRead *.hbs set filetype=mustache
 	au BufNewFile,BufRead *.js set filetype=javascript
 augroup END
 
