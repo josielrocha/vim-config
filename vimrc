@@ -19,6 +19,7 @@ let b:plugins = [
 			\	[ 'mustache/vim-mustache-handlebars', { 'for': ['html', 'mustache', 'handlebars'] } ],
 			\	[ 'heavenshell/vim-jsdoc', { 'for': ['javascript' ] } ],
 			\	[ 'artur-shaik/vim-javacomplete2', { 'for': ['java'] } ],
+			\	[ 'Valloric/YouCompleteMe', { 'for': ['javascript'], 'do': './install.py --js-completor' } ],
 			\	'NLKNguyen/papercolor-theme',
 			\	'sheerun/vim-polyglot',
 			\	'airblade/vim-gitgutter',
@@ -32,7 +33,6 @@ let b:plugins = [
 			\	'kien/tabman.vim',
 			\	'mhinz/vim-grepper',
 			\	'ntpeters/vim-better-whitespace',
-			\	'maralla/completor.vim',
 			\	'scrooloose/nerdcommenter',
 			\	'scrooloose/nerdtree',
 			\	'terryma/vim-multiple-cursors',
@@ -45,6 +45,9 @@ let b:plugins = [
 			\	'w0rp/ale',
 			\	'xuyuanp/nerdtree-git-plugin',
 			\]
+
+
+			"\	'maralla/completor.vim',
 
 " Plugins
 for plugin in b:plugins
