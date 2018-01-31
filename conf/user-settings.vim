@@ -13,9 +13,7 @@ augroup user-colorscheme
 	"colorscheme onedark
 
 	let g:airline_theme='codedark'
-	"colorscheme codedark
-
-	colorscheme nova
+	colorscheme codedark
 
 	set background=dark
 augroup END
