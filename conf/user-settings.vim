@@ -22,6 +22,7 @@ augroup END
 augroup swap
 	set noswapfile
 	set nobackup
+	set nowritebackup
 augroup END
 
 augroup remap
