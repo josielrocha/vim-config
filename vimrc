@@ -28,6 +28,7 @@ let b:plugins = [
 			\	'vim-airline/vim-airline-themes',
 			\	'w0rp/ale',
 			\	'xuyuanp/nerdtree-git-plugin',
+			\	[ 'prettier/vim-prettier', { 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'], 'do': 'npm install' } ],
 			\	[ 'Valloric/YouCompleteMe', { 'for': ['javascript'], 'do': './install.py --js-completer' } ],
 			\	[ 'Yggdroot/LeaderF', { 'do': './install.sh' } ],
 			\	[ 'ekalinin/dockerfile.vim', {  'for': ['dockerfile'] } ],

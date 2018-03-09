@@ -1,4 +1,5 @@
 /plugged
+/node_modules
 *.orig
 *.swp
 .vimsession*
