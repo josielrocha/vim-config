@@ -10,10 +10,10 @@ augroup user-colorscheme
 	"colorscheme PaperColor
 
 	"let g:airline_theme='onedark'
-	"colorscheme onedark
+	colorscheme onedark
 
 	let g:airline_theme='codedark'
-	colorscheme codedark
+	"colorscheme codedark
 
 	set background=dark
 augroup END
