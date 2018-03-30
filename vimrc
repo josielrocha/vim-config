@@ -40,15 +40,7 @@ let b:plugins = [
 			\	[ 'mattn/emmet-vim', { 'for': ['html', 'mustache', 'handlebars'] } ],
 			\	[ 'moll/vim-node', { 'for': ['javascript', 'typescript', 'jsx'] } ],
 			\	[ 'mustache/vim-mustache-handlebars', { 'for': ['html', 'mustache', 'handlebars'] } ],
-			\	[ 'prettier/vim-prettier', { 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'], 'do': 'npm install' } ],
 			\]
-
-			"\	[ 'mbra/vim-javascript-format', { 'for': ['javascript', 'json', 'jsx'] } ],
-			"\	'maralla/completor.vim',
-			"\	'tweekmonster/startuptime.vim',
-			"\	[ 'artur-shaik/vim-javacomplete2', { 'for': ['java'] } ],
-			"\	[ 'galooshi/vim-import-js', { 'for': ['javascript'] } ],
-			"\	[ 'hotoo/jsgf.vim', { 'for': ['javascript', 'typescript' ] } ],
 
 " Plugins
 for plugin in b:plugins
