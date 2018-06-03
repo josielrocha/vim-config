@@ -62,7 +62,7 @@ augroup visual-help
 	set fo-=t  " do not automatically wrap text when typing
 	let &colorcolumn=join(range(81, 81), ",")
 	highlight ColorColumn ctermbg=8
-	set tabstop=2 softtabstop=0 shiftwidth=4 smarttab
+	set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
 	set softtabstop=0 smarttab
 	set cursorline
 	set listchars=tab:>\ ,trail:·,extends:\#,nbsp:.
