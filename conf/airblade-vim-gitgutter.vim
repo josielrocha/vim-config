@@ -11,8 +11,6 @@ augroup airblade-vim-gitgutter
 	let g:gitgutter_realtime = 1
 	let g:gitgutter_signs = 1
 
-	set signcolumn=yes
-
 	nmap <F6> :GitGutterLineHighlightsToggle<CR>
 
 	" Customizing gutter column
