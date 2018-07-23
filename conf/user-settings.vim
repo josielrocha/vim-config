@@ -9,11 +9,11 @@ augroup user-colorscheme
 	"let g:airline_theme='papercolor'
 	"colorscheme PaperColor
 
-	let g:airline_theme='onedark'
-	colorscheme onedark
+	"let g:airline_theme='onedark'
+	"colorscheme onedark
 
-	"let g:airline_theme='codedark'
-	"colorscheme codedark
+	let g:airline_theme='codedark'
+	colorscheme codedark
 
 	"colorscheme ayu
 	"let ayucolor='dark'
