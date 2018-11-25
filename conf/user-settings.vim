@@ -9,13 +9,22 @@ augroup user-colorscheme
 	"let g:airline_theme='papercolor'
 	"colorscheme PaperColor
 
-	let g:airline_theme='onedark'
-	colorscheme onedark
+	"let g:airline_theme='onedark'
+	"colorscheme onedark
 
-	"let g:airline_theme='codedark'
-	"colorscheme codedark
+	let g:airline_theme='codedark'
+	colorscheme codedark
 
-	set background=dark
+	"colorscheme ayu
+	"let ayucolor='dark'
+	"set background=dark
+
+	"colorscheme nord
+	"set background=dark
+
+	"colorscheme palenight
+	"let g:palenight_terminal_italics=1
+	"set background=dark
 augroup END
 
 " Swap
@@ -26,22 +35,15 @@ augroup swap
 augroup END
 
 augroup remap
-	let mapleader = ","
+	let mapleader = ','
 augroup END
 
 " Filetypes
 augroup filetypes
 	au BufNewFile,BufRead *.json,.babelrc,.htmlhintrc,.eslintrc set ft=json
-	au BufNewFile,BufRead *.hbs set filetype=mustache
-	au BufNewFile,BufRead *.js set filetype=javascript
+	au BufNewFile,BufRead *.hbs,.handlebars set filetype=mustache
+	au BufNewFile,BufRead *.js,.es6 set filetype=javascript
 augroup END
-
-" Autocomplete
-"augroup autocomplete
-"    autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-"    autocmd FileType html,xhtml set omnifunc=htmlcomplete#CompleteTags
-"    autocmd FileType css,less,scss,sass set omnifunc=csscomplete#CompleteCSS
-"augroup END
 
 " Source Format
 augroup format
@@ -57,11 +59,11 @@ augroup END
 augroup visual-help
 	set number
 	set relativenumber
-	"set tw=79  " width of document (used by gd)
-	set wrap " do not automatically wrap on load
+	set tw=79  " width of document (used by gd)
+	set nowrap " do not automatically wrap on load
 	set fo-=t  " do not automatically wrap text when typing
-	"let &colorcolumn=join(range(81, 81), ",")
-	"highlight ColorColumn ctermbg=8
+	let &colorcolumn=join(range(81, 81), ',')
+	highlight ColorColumn ctermbg=8
 	set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
 	set softtabstop=0 smarttab
 	set cursorline
@@ -81,6 +83,13 @@ augroup fold
 	set foldmethod=indent
 augroup END
 
+" GUI Colors
+augroup termguicolors
+	if has('termguicolors')
+		set termguicolors
+	endif
+augroup END
+
 " Clipboard
 augroup clipboard
 	if has('clipboard')
@@ -95,7 +104,7 @@ augroup END
 augroup diff
 	if &diff
 		colorscheme Monokai
-		let &diffexpr='EnhancedDiff#Diff("git diff", "--diff-algorithm=patience")'
+		let &diffexpr='EnhancedDiff#Diff('git diff', '--diff-algorithm=patience')'
 	endif
 augroup END
 
@@ -118,22 +127,4 @@ augroup disable
 	inoremap <left> <nop>
 	inoremap <right> <nop>
 augroup END
-
-"augroup ternjs
-"  inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-"  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-"  inoremap <expr> <cr> pumvisible() ? "\<C-y>\<cr>" : "\<cr>"
-
-"  let g:completor_auto_trigger = 1
-"  "inoremap <expr> <Tab> pumvisible() ? "<C-N>" : "<C-R>=completor#do('complete')<CR>"
-
-"  let g:completor_set_options = 0
-
-"  set completeopt-=longest
-"  set completeopt+=menuone
-"  set completeopt-=menu
-"  if &completeopt !~# 'noinsert\|noselect'
-"    set completeopt+=noselect
-"  endif
-"augroup END
 
