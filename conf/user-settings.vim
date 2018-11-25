@@ -9,10 +9,10 @@ augroup user-colorscheme
 	"let g:airline_theme='papercolor'
 	"colorscheme PaperColor
 
-	"let g:airline_theme='onedark'
+	let g:airline_theme='onedark'
 	colorscheme onedark
 
-	let g:airline_theme='codedark'
+	"let g:airline_theme='codedark'
 	"colorscheme codedark
 
 	set background=dark
@@ -57,11 +57,11 @@ augroup END
 augroup visual-help
 	set number
 	set relativenumber
-	set tw=79  " width of document (used by gd)
-	set nowrap " do not automatically wrap on load
+	"set tw=79  " width of document (used by gd)
+	set wrap " do not automatically wrap on load
 	set fo-=t  " do not automatically wrap text when typing
-	let &colorcolumn=join(range(81, 81), ",")
-	highlight ColorColumn ctermbg=8
+	"let &colorcolumn=join(range(81, 81), ",")
+	"highlight ColorColumn ctermbg=8
 	set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
 	set softtabstop=0 smarttab
 	set cursorline

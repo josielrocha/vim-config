@@ -26,12 +26,12 @@ let b:plugins = [
 			\	'vim-airline/vim-airline-themes',
 			\	'w0rp/ale',
 			\	'xuyuanp/nerdtree-git-plugin',
+			\	'wakatime/vim-wakatime',
 			\	['joonty/vdebug', { 'for': ['php'] }],
 			\	[ 'rust-lang/rust.vim', { 'for': ['rust'] } ],
 			\	[ 'Valloric/YouCompleteMe', { 'for': ['javascript'], 'do': './install.py --js-completer' } ],
 			\	[ 'Yggdroot/LeaderF', { 'do': './install.sh' } ],
 			\	[ 'ekalinin/dockerfile.vim', {  'for': ['dockerfile'] } ],
-			\	[ 'gregsexton/matchtag', { 'for': ['html', 'mustache', 'handlebars', 'jsx'] } ],
 			\	[ 'heavenshell/vim-jsdoc', { 'for': ['javascript', 'typescript', 'jsx' ] } ],
 			\	[ 'isRuslan/vim-es6', { 'for': ['javascript', 'typescript'] } ],
 			\	[ 'kewah/vim-stylefmt', { 'for': ['css', 'sass', 'scss', 'less', 'stylus'] } ],
@@ -41,6 +41,8 @@ let b:plugins = [
 			\	[ 'moll/vim-node', { 'for': ['javascript', 'typescript', 'jsx'] } ],
 			\	[ 'mustache/vim-mustache-handlebars', { 'for': ['html', 'mustache', 'handlebars'] } ],
 			\]
+
+			"\	[ 'gregsexton/matchtag', { 'for': ['html', 'mustache', 'handlebars', 'jsx'] } ],
 
 " Plugins
 for plugin in b:plugins
