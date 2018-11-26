@@ -9,7 +9,6 @@ let b:plugins = [
 			\	'airblade/vim-gitgutter',
 			\	'airblade/vim-rooter',
 			\	'arcticicestudio/nord-vim',
-			\	'ayu-theme/ayu-vim',
 			\	'drewtempelmeyer/palenight.vim',
 			\	'editorconfig/editorconfig-vim',
 			\	'jiangmiao/auto-pairs',
@@ -46,6 +45,7 @@ let b:plugins = [
 			\	['rust-lang/rust.vim', {'for': ['rust']}]
 			\]
 
+			"\	'ayu-theme/ayu-vim',
 			"\	[ 'gregsexton/matchtag', { 'for': ['html', 'mustache', 'handlebars', 'jsx'] } ],
 
 " Plugins
