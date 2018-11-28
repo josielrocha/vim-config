@@ -35,16 +35,16 @@ let b:plugins = [
 			\	['artur-shaik/vim-javacomplete2', {'for': ['java']}],
 			\	['ekalinin/dockerfile.vim', {'for': ['dockerfile']}],
 			\	['heavenshell/vim-jsdoc', {'for': ['javascript', 'typescript', 'jsx']}],
-			\	['isRuslan/vim-es6', {'for': ['javascript', 'typescript']}],
-			\	['joonty/vdebug', {'for': ['php']}],
+			\	['isRuslan/vim-es6', {'for': ['javascript', 'typescript', 'jsx']}],
+			\	['joonty/vdebug', {'for': ['php', 'python']}],
 			\	['kewah/vim-stylefmt', {'for': ['css', 'sass', 'scss', 'less', 'stylus']}],
 			\	['lepture/vim-velocity', {'for': ['velocity']}],
-			\	['maksimr/vim-jsbeautify', {'for': ['javascript', 'typescript', 'json', 'jsx']}],
-			\	['mattn/emmet-vim', {'for': ['html', 'mustache', 'handlebars']}],
+			\	['maksimr/vim-jsbeautify', {'for': ['javascript', 'typescript', 'json']}],
+			\	['mattn/emmet-vim', {'for': ['html', 'mustache', 'handlebars', 'jsx']}],
 			\	['moll/vim-node', {'for': ['javascript', 'typescript', 'jsx']}],
 			\	['mustache/vim-mustache-handlebars', {'for': ['html', 'mustache', 'handlebars']}],
-			\	['mxw/vim-jsx', {'for': ['javascript', 'jsx']}],
-			\	['pangloss/vim-javascript', {'for': ['javascript', 'jsx', 'json']}],
+			\	['mxw/vim-jsx', {'for': ['javascript', 'typescript', 'jsx']}],
+			\	['pangloss/vim-javascript', {'for': ['javascript', 'jsx']}],
 			\	['rust-lang/rust.vim', {'for': ['rust']}]
 			\]
 
