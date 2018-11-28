@@ -43,8 +43,8 @@ let b:plugins = [
 			\	['mattn/emmet-vim', {'for': ['html', 'mustache', 'handlebars']}],
 			\	['moll/vim-node', {'for': ['javascript', 'typescript', 'jsx']}],
 			\	['mustache/vim-mustache-handlebars', {'for': ['html', 'mustache', 'handlebars']}],
-			\	['mxw/vim-jsx', {}],
-			\	['pangloss/vim-javascript', {}],
+			\	['mxw/vim-jsx', {'for': ['javascript', 'jsx']}],
+			\	['pangloss/vim-javascript', {'for': ['javascript', 'jsx', 'json']}],
 			\	['rust-lang/rust.vim', {'for': ['rust']}]
 			\]
 

@@ -3,6 +3,7 @@ augroup w0rp-ale
 	let g:ale_scss_stylelint_executable = 'node_modules/.bin/stylelint'
 	let g:ale_javascript_eslint_executable = 'node_modules/.bin/eslint'
 	let g:ale_javascript_eslint_use_global = 0
+	let g:airline#extensions#ale#enabled = 1
 	let g:ale_linters = {
 				\	'javascript':
 				\	[
@@ -16,6 +17,8 @@ augroup w0rp-ale
 
 	" https://prettier.io/docs/en/vim.html
 	let g:ale_javascript_prettier_options = '--single-quote --trailling-comma es5'
+	let g:prettier#config#use_tabs = 'true'
+	let g:prettier#config#tab_width = 4
 	let g:ale_fix_on_save = 1
 	let g:ale_fixers = {
 				\	'javascript':
