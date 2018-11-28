@@ -10,11 +10,11 @@ let b:plugins = [
 			\	'airblade/vim-rooter',
 			\	'arcticicestudio/nord-vim',
 			\	'ayu-theme/ayu-vim',
+			\	'ayu-theme/ayu-vim-airline',
 			\	'drewtempelmeyer/palenight.vim',
 			\	'editorconfig/editorconfig-vim',
 			\	'jiangmiao/auto-pairs',
 			\	'jistr/vim-nerdtree-tabs',
-			\	'johngrib/vim-game-snake',
 			\	'joshdick/onedark.vim',
 			\	'mhinz/vim-grepper',
 			\	'ntpeters/vim-better-whitespace',
@@ -30,12 +30,10 @@ let b:plugins = [
 			\	'vim-airline/vim-airline-themes',
 			\	'w0rp/ale',
 			\	'xuyuanp/nerdtree-git-plugin',
-			\	['pangloss/vim-javascript', {}],
-			\	['mxw/vim-jsx', {}],
 			\	['Valloric/YouCompleteMe', {'for': ['javascript'], 'do': './install.py --js-completer'}],
 			\	['Yggdroot/LeaderF', {'do': './install.sh'}],
+			\	['artur-shaik/vim-javacomplete2', {'for': ['java']}],
 			\	['ekalinin/dockerfile.vim', {'for': ['dockerfile']}],
-			\	['gregsexton/matchtag', {'for': ['html', 'mustache', 'handlebars', 'jsx']}],
 			\	['heavenshell/vim-jsdoc', {'for': ['javascript', 'typescript', 'jsx']}],
 			\	['isRuslan/vim-es6', {'for': ['javascript', 'typescript']}],
 			\	['joonty/vdebug', {'for': ['php']}],
@@ -45,8 +43,12 @@ let b:plugins = [
 			\	['mattn/emmet-vim', {'for': ['html', 'mustache', 'handlebars']}],
 			\	['moll/vim-node', {'for': ['javascript', 'typescript', 'jsx']}],
 			\	['mustache/vim-mustache-handlebars', {'for': ['html', 'mustache', 'handlebars']}],
+			\	['mxw/vim-jsx', {}],
+			\	['pangloss/vim-javascript', {}],
 			\	['rust-lang/rust.vim', {'for': ['rust']}]
 			\]
+
+			"\	'johngrib/vim-game-snake',
 
 " Plugins
 for plugin in b:plugins

@@ -12,19 +12,18 @@ augroup user-colorscheme
 	"let g:airline_theme='onedark'
 	"colorscheme onedark
 
-	let g:airline_theme='codedark'
-	colorscheme codedark
+	"let g:airline_theme='codedark'
+	"colorscheme codedark
 
-	"colorscheme ayu
-	"let ayucolor='dark'
-	"set background=dark
+	set background=dark
+
+	let g:airline_theme='ayu'
+	let g:ayucolor='dark'
+	colorscheme ayu
 
 	"colorscheme nord
-	"set background=dark
-
 	"colorscheme palenight
 	"let g:palenight_terminal_italics=1
-	"set background=dark
 augroup END
 
 " Swap
